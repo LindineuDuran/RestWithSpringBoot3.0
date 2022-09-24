@@ -275,14 +275,14 @@ public class BookControllerYamlTest extends AbstractIntegrationTest
 				.body()
 				.asString();
 
-		assertTrue(content.contains("rel: \"self\"\n" + "    href: \"http://localhost/api/book/v1/12\""));
-		assertTrue(content.contains("rel: \"self\"\n" + "    href: \"http://localhost/api/book/v1/8\""));
-		assertTrue(content.contains("rel: \"self\"\n" + "    href: \"http://localhost/api/book/v1/15\""));
+		assertTrue(content.contains("rel: \"self\"\n" + "    href: \"http://localhost:8888/api/book/v1/12\""));
+		assertTrue(content.contains("rel: \"self\"\n" + "    href: \"http://localhost:8888/api/book/v1/8\""));
+		assertTrue(content.contains("rel: \"self\"\n" + "    href: \"http://localhost:8888/api/book/v1/15\""));
 
-		assertTrue(content.contains("rel: \"first\"\n" + "  href: \"http://localhost/api/book/v1?direction=asc&page=0&size=10&sort=title,asc\""));
-		assertTrue(content.contains("rel: \"self\"\n" + "  href: \"http://localhost/api/book/v1?page=0&size=10&direction=asc\""));
-		assertTrue(content.contains("rel: \"next\"\n" + "  href: \"http://localhost/api/book/v1?direction=asc&page=1&size=10&sort=title,asc\""));
-		assertTrue(content.contains("rel: \"last\"\n" + "  href: \"http://localhost/api/book/v1?direction=asc&page=1&size=10&sort=title,asc\""));
+		assertTrue(content.contains("rel: \"first\"\n" + "  href: \"http://localhost:8888/api/book/v1?direction=asc&page=0&size=10&sort=title,asc\""));
+		assertTrue(content.contains("rel: \"self\"\n" + "  href: \"http://localhost:8888/api/book/v1?page=0&size=10&direction=asc\""));
+		assertTrue(content.contains("rel: \"next\"\n" + "  href: \"http://localhost:8888/api/book/v1?direction=asc&page=1&size=10&sort=title,asc\""));
+		assertTrue(content.contains("rel: \"last\"\n" + "  href: \"http://localhost:8888/api/book/v1?direction=asc&page=1&size=10&sort=title,asc\""));
 
 		assertTrue(content.contains("page:\n" + "  size: 10\n" + "  totalElements: 15\n" + "  totalPages: 2\n" + "  number: 0"));
 	}
