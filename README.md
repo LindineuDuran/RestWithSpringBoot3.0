@@ -2,6 +2,7 @@
 #### Desenvolvimento de uma API REST do zero absoluto atendendo todos os níveis de maturidade RESTful e implante na AWS + React JS
 
 - [![Docker Hub Repo](https://img.shields.io/docker/pulls/lduran355/rest-with-spring-boot-udemy.svg)](https://hub.docker.com/repository/docker/lduran355/rest-with-spring-boot-udemy)
+- [Swagger UI](http://localhost:8080/swagger-ui.html)
 - [Este é o repositório dos codigos fonte desenvolvidos no curso - leandrocgsi/RestWithSpringBootUdemy](https://github.com/leandrocgsi/rest-with-spring-boot-and-java-erudio)
 - [Este é o repositório com o protótipo do projeto - leandrocgsi/RestWithSpringBootUdemyArchetype](https://github.com/leandrocgsi/RestWithSpringBootUdemyArchetype)
 - [Crie um banco de dados MySQL e conecte-se a ele com o Amazon RDS](https://aws.amazon.com/pt/getting-started/hands-on/create-mysql-db/)
