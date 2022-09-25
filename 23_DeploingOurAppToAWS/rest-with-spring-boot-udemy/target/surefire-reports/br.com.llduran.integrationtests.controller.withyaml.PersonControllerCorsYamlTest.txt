@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: br.com.llduran.integrationtests.controller.withyaml.PersonControllerCorsYamlTest
--------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.892 s - in br.com.llduran.integrationtests.controller.withyaml.PersonControllerCorsYamlTest
