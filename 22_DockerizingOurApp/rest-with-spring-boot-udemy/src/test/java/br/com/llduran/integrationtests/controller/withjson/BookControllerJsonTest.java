@@ -232,14 +232,28 @@ public class BookControllerJsonTest extends AbstractIntegrationTest
 				.body()
 				.asString();
 
-		assertTrue(content.contains("_links\":{\"self\":{\"href\":\"http://localhost:8888/api/book/v1/12\"}}}"));
-		assertTrue(content.contains("_links\":{\"self\":{\"href\":\"http://localhost:8888/api/book/v1/8\"}}}"));
-		assertTrue(content.contains("_links\":{\"self\":{\"href\":\"http://localhost:8888/api/book/v1/15\"}}}"));
+		if (TestConfigs.SERVER_PORT != 80)
+		{
+			assertTrue(content.contains("_links\":{\"self\":{\"href\":\"http://localhost:" + TestConfigs.SERVER_PORT+ "/api/book/v1/12\"}}}"));
+			assertTrue(content.contains("_links\":{\"self\":{\"href\":\"http://localhost:" + TestConfigs.SERVER_PORT+ "/api/book/v1/8\"}}}"));
+			assertTrue(content.contains("_links\":{\"self\":{\"href\":\"http://localhost:" + TestConfigs.SERVER_PORT+ "/api/book/v1/15\"}}}"));
 
-		assertTrue(content.contains("first\":{\"href\":\"http://localhost:8888/api/book/v1?direction=asc&page=0&size=10&sort=title,asc\"}"));
-		assertTrue(content.contains("self\":{\"href\":\"http://localhost:8888/api/book/v1?page=0&size=10&direction=asc\"}"));
-		assertTrue(content.contains("next\":{\"href\":\"http://localhost:8888/api/book/v1?direction=asc&page=1&size=10&sort=title,asc\"}"));
-		assertTrue(content.contains("last\":{\"href\":\"http://localhost:8888/api/book/v1?direction=asc&page=1&size=10&sort=title,asc\"}"));
+			assertTrue(content.contains("first\":{\"href\":\"http://localhost:" + TestConfigs.SERVER_PORT+ "/api/book/v1?direction=asc&page=0&size=10&sort=title,asc\"}"));
+			assertTrue(content.contains("self\":{\"href\":\"http://localhost:" + TestConfigs.SERVER_PORT+ "/api/book/v1?page=0&size=10&direction=asc\"}"));
+			assertTrue(content.contains("next\":{\"href\":\"http://localhost:" + TestConfigs.SERVER_PORT+ "/api/book/v1?direction=asc&page=1&size=10&sort=title,asc\"}"));
+			assertTrue(content.contains("last\":{\"href\":\"http://localhost:" + TestConfigs.SERVER_PORT+ "/api/book/v1?direction=asc&page=1&size=10&sort=title,asc\"}"));
+		}
+		else
+		{
+			assertTrue(content.contains("_links\":{\"self\":{\"href\":\"http://localhost/api/book/v1/12\"}}}"));
+			assertTrue(content.contains("_links\":{\"self\":{\"href\":\"http://localhost/api/book/v1/8\"}}}"));
+			assertTrue(content.contains("_links\":{\"self\":{\"href\":\"http://localhost/api/book/v1/15\"}}}"));
+
+			assertTrue(content.contains("first\":{\"href\":\"http://localhost/api/book/v1?direction=asc&page=0&size=10&sort=title,asc\"}"));
+			assertTrue(content.contains("self\":{\"href\":\"http://localhost/api/book/v1?page=0&size=10&direction=asc\"}"));
+			assertTrue(content.contains("next\":{\"href\":\"http://localhost/api/book/v1?direction=asc&page=1&size=10&sort=title,asc\"}"));
+			assertTrue(content.contains("last\":{\"href\":\"http://localhost/api/book/v1?direction=asc&page=1&size=10&sort=title,asc\"}"));
+		}
 
 		assertTrue(content.contains("page\":{\"size\":10,\"totalElements\":15,\"totalPages\":2,\"number\":0}"));
 	}

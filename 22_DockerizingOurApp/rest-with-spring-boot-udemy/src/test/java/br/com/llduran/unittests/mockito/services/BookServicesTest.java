@@ -61,18 +61,18 @@ class BookServicesTest
 	@Test
 	void testCreate()
 	{
-		final Book entity = this.input.mockEntity(1);
+		Book entity = this.input.mockEntity(1);
 		entity.setId(1L);
 
-		final Book persisted = entity;
+		Book persisted = entity;
 		persisted.setId(1L);
 
-		final BookVO vo = this.input.mockVO(1);
+		BookVO vo = this.input.mockVO(1);
 		vo.setKey(1L);
 
 		when(this.repository.save(entity)).thenReturn(persisted);
 
-		final var result = this.service.create(vo);
+		var result = this.service.create(vo);
 
 		assertNotNull(result);
 		assertNotNull(result.getKey());
@@ -88,12 +88,12 @@ class BookServicesTest
 	@Test
 	void testCreateWithNullBook()
 	{
-		final Exception exception = assertThrows(RequiredObjectIsNullException.class, () -> {
+		Exception exception = assertThrows(RequiredObjectIsNullException.class, () -> {
 			this.service.create(null);
 		});
 
-		final String expectedMessage = "It is not allowed to persist a null object!";
-		final String actualMessage = exception.getMessage();
+		String expectedMessage = "It is not allowed to persist a null object!";
+		String actualMessage = exception.getMessage();
 
 		assertTrue(actualMessage.contains(expectedMessage));
 	}
@@ -101,18 +101,18 @@ class BookServicesTest
 	@Test
 	void testUpdate()
 	{
-		final Book entity = this.input.mockEntity(1);
+		Book entity = this.input.mockEntity(1);
 
-		final Book persisted = entity;
+		Book persisted = entity;
 		persisted.setId(1L);
 
-		final BookVO vo = this.input.mockVO(1);
+		BookVO vo = this.input.mockVO(1);
 		vo.setKey(1L);
 
 		when(this.repository.findById(1L)).thenReturn(Optional.of(entity));
 		when(this.repository.save(entity)).thenReturn(persisted);
 
-		final var result = this.service.update(vo);
+		var result = this.service.update(vo);
 
 		assertNotNull(result);
 		assertNotNull(result.getKey());
@@ -128,12 +128,12 @@ class BookServicesTest
 	@Test
 	void testUpdateWithNullBook()
 	{
-		final Exception exception = assertThrows(RequiredObjectIsNullException.class, () -> {
+		Exception exception = assertThrows(RequiredObjectIsNullException.class, () -> {
 			this.service.update(null);
 		});
 
-		final String expectedMessage = "It is not allowed to persist a null object!";
-		final String actualMessage = exception.getMessage();
+		String expectedMessage = "It is not allowed to persist a null object!";
+		String actualMessage = exception.getMessage();
 
 		assertTrue(actualMessage.contains(expectedMessage));
 	}
@@ -141,7 +141,7 @@ class BookServicesTest
 	@Test
 	void testDelete()
 	{
-		final Book entity = this.input.mockEntity(1);
+		Book entity = this.input.mockEntity(1);
 		entity.setId(1L);
 
 		when(this.repository.findById(1L)).thenReturn(Optional.of(entity));
