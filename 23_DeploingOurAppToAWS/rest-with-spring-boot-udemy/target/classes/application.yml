@@ -1,0 +1,30 @@
+server:
+  port: 80
+cors:
+  originPatterns: http://localhost:3000,http://localhost:8080,https://erudio.com.br
+file:
+  upload-dir: /Code/UploadDir
+security:
+  jwt:
+    token:
+      secret-key: 53ccr37
+      expire-length: 3600000
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://rest-with-spring-boot.c2ambqa7stx4.sa-east-1.rds.amazonaws.com:3306/rest_with_spring_boot?useTimezone=true&serverTimezone=UTC
+    username: docker
+    password: admin123
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: false
+springdoc:
+  pathsToMatch:
+    - /auth/**
+    - /api/**/v1/**
+  swagger-ui:
+    use-root-path: true
