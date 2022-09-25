@@ -2,7 +2,6 @@
 #### Desenvolvimento de uma API REST do zero absoluto atendendo todos os níveis de maturidade RESTful e implante na AWS + React JS
 
 [![Continuous Integration with Github Actions](https://github.com/LindineuDuran/RestWithSpringBoot3.0/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/LindineuDuran/RestWithSpringBoot3.0/actions/workflows/continuous-integration.yml)
-
 [![Docker Hub Repo](https://img.shields.io/docker/pulls/lduran355/rest-with-spring-boot-udemy.svg)](https://hub.docker.com/repository/docker/lduran355/rest-with-spring-boot-udemy)
 - [Swagger UI](http://localhost:8080/swagger-ui.html)
 - [Este é o repositório dos codigos fonte desenvolvidos no curso - leandrocgsi/rest-with-spring-boot-and-java-erudio](https://github.com/leandrocgsi/rest-with-spring-boot-and-java-erudio)
