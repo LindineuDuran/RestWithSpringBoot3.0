@@ -38,3 +38,4 @@ jobs:
 
         docker push ${{ secrets.DOCKER_USERNAME }}/rest-with-spring-boot-udemy:${{ github.run_id }}
         docker push ${{ secrets.DOCKER_USERNAME }}/rest-with-spring-boot-udemy:latest
+        
