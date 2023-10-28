@@ -264,3 +264,4 @@ hs_err_pid*
 23_DeploingOurAppToAWS/rest-with-spring-boot-udemy/target/surefire-reports/TEST-br.com.llduran.unittests.mockito.services.BookServicesTest.xml
 23_DeploingOurAppToAWS/rest-with-spring-boot-udemy/target/surefire-reports/TEST-br.com.llduran.unittests.mockito.services.PersonServicesTest.xml
 23_DeploingOurAppToAWS/rest-with-spring-boot-udemy/target/test-classes/application.yml
+17_AuthenticationWithJWT/rest-with-spring-boot-udemy/target/classes/application.yml

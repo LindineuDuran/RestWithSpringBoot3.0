@@ -4,12 +4,14 @@
 [![Continuous Integration with Github Actions](https://github.com/LindineuDuran/RestWithSpringBoot3.0/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/LindineuDuran/RestWithSpringBoot3.0/actions/workflows/continuous-integration.yml)
 [![Docker Hub Repo](https://img.shields.io/docker/pulls/lduran355/rest-with-spring-boot-udemy.svg)](https://hub.docker.com/repository/docker/lduran355/rest-with-spring-boot-udemy)
 - [Swagger UI](http://localhost:8080/swagger-ui.html)
+- [Swagger UI - Dockerizado](http://localhost/swagger-ui/index.html)
 - [Este é o repositório dos codigos fonte desenvolvidos no curso - leandrocgsi/rest-with-spring-boot-and-java-erudio](https://github.com/leandrocgsi/rest-with-spring-boot-and-java-erudio)
 - [Este é o repositório com o protótipo do projeto - leandrocgsi/RestWithSpringBootUdemyArchetype](https://github.com/leandrocgsi/RestWithSpringBootUdemyArchetype)
 - [Crie um banco de dados MySQL e conecte-se a ele com o Amazon RDS](https://aws.amazon.com/pt/getting-started/hands-on/create-mysql-db/)
 - [Baixe o e-Book grátis "Docker um guia Rápido"](https://pub.erudio.com.br/guia-docker)
 - [XML Serialization and Deserialization with Jackson](https://www.baeldung.com/jackson-xml-serialization-and-deserialization)
 - [Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.0](https://exerror.com/failed-to-execute-goal-org-apache-maven-pluginsmaven-compiler-plugin3-8-0compile-default-compile-on-project-demo-fatal-error-compiling-invalid-target-release-11/)
+- [Requisição pelo Swagger passando o JWT retornando 403](https://cursos.alura.com.br/forum/topico-requisicao-pelo-swagger-passando-o-jwt-retornando-403-261682)
 
 # Sobre REST
 

@@ -32,14 +32,22 @@
       <console name="mysql" type="STANDARD" schema="mysql" session="Main" />
     </connection>
   </component>
+  <component name="DBNavigator.Project.DatabaseEditorStateManager">
+    <last-used-providers />
+  </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="e414ec46-249e-46a8-9227-7544f56d00ab" object-ref="schemas/rest_with_spring_boot/tables/users" />
+      <object connection-id="e414ec46-249e-46a8-9227-7544f56d00ab" object-ref="schemas/rest_with_spring_boot/tables/permission" />
+    </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="e414ec46-249e-46a8-9227-7544f56d00ab" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="e414ec46-249e-46a8-9227-7544f56d00ab" dataset="rest_with_spring_boot.users" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="e414ec46-249e-46a8-9227-7544f56d00ab" dataset="rest_with_spring_boot.person" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="e414ec46-249e-46a8-9227-7544f56d00ab" dataset="rest_with_spring_boot.permission" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
